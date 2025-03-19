@@ -65,7 +65,7 @@ async function insertMedia(editor) {
                 html = '<iframe class="nudgis-iframe" ' +
                     'style="width:' + mediaWidth + '; height: ' + mediaHeight + '; background-color: #ddd;" ' +
                     'src="' + window.M.cfg.wwwroot + '/lib/editor/tiny/plugins/ubicast/view.php' +
-                    '?course=' + courseId + ' &video= + ' + mediaId + '" ' +
+                    '?course=' + courseId + ' &video=' + mediaId + '" ' +
                     'allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen">' +
                     '</iframe>';
             }
