@@ -45,7 +45,7 @@ class plugininfo extends plugin implements plugin_with_configuration {
         array $fpoptions,
         ?\editor_tiny\editor $editor = null
     ): bool {
-        return $context->contextlevel >= CONTEXT_COURSE;
+        return $context->get_course_context(false) !== false;
     }
 
     /**
