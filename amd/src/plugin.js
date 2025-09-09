@@ -48,7 +48,7 @@ export default new Promise(async(resolve) => {
     if (!window.MediaSelector) {
         const script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = window.M.cfg.wwwroot + '/mod/ubicast/statics/media_selector.js?_=m7';
+        script.src = window.M.cfg.wwwroot + '/mod/ubicast/statics/media_selector.js?_=m8';
         document.head.appendChild(script);
     }
 
