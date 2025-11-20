@@ -1,6 +1,6 @@
 # Makefile.
 DOCKER_IMAGE_NAME ?= tiny_ubicast
-DOCKER_PLUGIN_DIR = /opt/moodle/lib/editor/tiny/plugins/ubicast
+DOCKER_PLUGIN_DIR = /opt/moodle/public/lib/editor/tiny/plugins/ubicast
 
 zip:
 	# Build zip file for moodle.org with last commit.
