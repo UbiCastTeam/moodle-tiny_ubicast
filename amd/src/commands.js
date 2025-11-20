@@ -54,13 +54,14 @@ async function insertMedia(editor) {
         const mediaWidth = form.querySelector('input[name=mediawidth]').value;
         const mediaHeight = form.querySelector('input[name=mediaheight]').value;
         const mediaThumb = form.querySelector('input[name=mediaimg]').value || '/static/mediaserver/images/video.svg';
+        const mediaTitle = form.querySelector('input[name=mediatitle]').value || 'Nudgis content';
 
         let html;
         if (mediaId) {
             if (useFilter) {
                 html = '<img class="atto_ubicast mediaid_' + mediaId + '" ' +
                     'style="display: block; width: ' + mediaWidth + '; height: ' + mediaHeight + ';" ' +
-                    'src="' + ubicastURL + mediaThumb + '" alt=""/>';
+                    'src="' + ubicastURL + mediaThumb + '" alt="' + mediaTitle.replace('"', "''") + '"/>';
             } else {
                 html = '<iframe class="nudgis-iframe" ' +
                     'style="width:' + mediaWidth + '; height: ' + mediaHeight + '; background-color: #ddd;" ' +
