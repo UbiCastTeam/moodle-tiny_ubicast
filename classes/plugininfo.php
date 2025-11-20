@@ -29,7 +29,6 @@ use editor_tiny\plugin_with_configuration;
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class plugininfo extends plugin implements plugin_with_configuration {
-
     /**
      * Determine if the plugin should be enabled by checking the context.
      *
