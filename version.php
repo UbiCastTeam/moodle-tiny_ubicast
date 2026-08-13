@@ -26,8 +26,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'tiny_ubicast';      // Full name of the plugin (used for diagnostics).
 $plugin->maturity = MATURITY_STABLE;      // Maturity of module.
-$plugin->release = '1.4';                 // Human-readable version name.
-$plugin->version = 2025112000;            // The current module version (Date: YYYYMMDDXX).
+$plugin->release = '1.5';                 // Human-readable version name.
+$plugin->version = 2026081300;            // The current module version (Date: YYYYMMDDXX).
 $plugin->requires = 2023042400;  // 4.2   // Requires this Moodle version.
 $plugin->dependencies = [                 // Other plugins required.
     'mod_ubicast' => 2025112000,
